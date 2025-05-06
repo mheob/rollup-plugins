@@ -1,5 +1,11 @@
 # @mheob/rollup-plugin-copy
 
+## 1.0.2
+
+### Patch Changes
+
+- [#7](https://github.com/mheob/rollup-plugins/pull/7) ([@mheob](https://github.com/mheob)): add the correct package homepage in the `package.json`
+
 ## 1.0.1
 
 ### Patch Changes

@@ -103,23 +103,21 @@ export default function copy({
 			}
 		},
 		async generateBundle() {
-async generateBundle() {
-	for (const filePath of filesToCopy) {
-		const fileName = path.relative(resolvedRootDir, filePath);
-		try {
-			this.emitFile({
-				fileName,
-				source: fs.readFileSync(filePath),
-				type: 'asset',
-			});
-		} catch (error) {
-			this.error(
-				`Failed to read file: ${filePath}\n` +
-				`${error instanceof Error ? error.message : String(error)}`
-			);
-		}
-	}
-},
+			for (const filePath of filesToCopy) {
+				const fileName = path.relative(resolvedRootDir, filePath);
+				try {
+					this.emitFile({
+						fileName,
+						source: fs.readFileSync(filePath),
+						type: 'asset',
+					});
+				} catch (error) {
+					this.error(
+						`Failed to read file: ${filePath}\n` +
+							`${error instanceof Error ? error.message : String(error)}`,
+					);
+				}
+			}
 		},
 		name: '@mheob/rollup-plugin-copy',
 	} satisfies Plugin;

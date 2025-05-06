@@ -1,8 +1,11 @@
 ---
 description: Any inside generic functions
 globs:
+  - '**/*.ts'
+  - '**/*.tsx'
 alwaysApply: false
 ---
+
 # Any inside generic functions
 
 But when building generic functions, you may need to use any inside the function body.

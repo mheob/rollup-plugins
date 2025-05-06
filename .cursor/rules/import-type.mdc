@@ -1,8 +1,11 @@
 ---
 description: Import type
 globs:
+  - '**/*.ts'
+  - '**/*.tsx'
 alwaysApply: false
 ---
+
 # Import type
 
 Use import type whenever you are importing a type.

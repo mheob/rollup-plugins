@@ -1,8 +1,11 @@
 ---
 description: Naming convention
 globs:
+  - '**/*.ts'
+  - '**/*.tsx'
 alwaysApply: false
 ---
+
 # Naming convention
 
 - Use descriptive variable names with auxiliary verbs (e.g. `isLoading`, `hasError`, `canDelete` etc.)

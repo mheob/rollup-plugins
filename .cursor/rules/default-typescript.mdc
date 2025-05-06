@@ -1,8 +1,11 @@
 ---
 description: Default Typescript
 globs:
+  - '**/*.ts'
+  - '**/*.tsx'
 alwaysApply: false
 ---
+
 # Default Typescript
 
 ## Key Principles

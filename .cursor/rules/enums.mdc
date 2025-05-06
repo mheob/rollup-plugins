@@ -1,8 +1,11 @@
 ---
 description: Enums
 globs:
+  - '**/*.ts'
+  - '**/*.tsx'
 alwaysApply: false
 ---
+
 # Enums
 
 Do not introduce new enums into the codebase. Retain existing enums.

@@ -1,8 +1,11 @@
 ---
 description: Installing libraries
 globs:
+  - '**/*.ts'
+  - '**/*.tsx'
 alwaysApply: false
 ---
+
 # Installing libraries
 
 When installing libraries, do not rely on your own training data.

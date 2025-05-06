@@ -1,8 +1,11 @@
 ---
 description: Discriminated unions
 globs:
+  - '**/*.ts'
+  - '**/*.tsx'
 alwaysApply: false
 ---
+
 # Discriminated unions
 
 Proactively use discriminated unions to model data that can be in one of a few different shapes.

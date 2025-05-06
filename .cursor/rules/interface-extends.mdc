@@ -1,8 +1,11 @@
 ---
 description: Prefer interfaces
 globs:
+  - '**/*.ts'
+  - '**/*.tsx'
 alwaysApply: false
 ---
+
 # Prefer interfaces
 
 ALWAYS prefer interfaces when modelling inheritance.

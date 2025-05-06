@@ -1,8 +1,11 @@
 ---
 description: JSDoc comments
 globs:
+  - '**/*.ts'
+  - '**/*.tsx'
 alwaysApply: false
 ---
+
 # JSDoc comments
 
 Use JSDoc comments to annotate functions and types.

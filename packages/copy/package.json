@@ -1,6 +1,6 @@
 {
 	"name": "@mheob/rollup-plugin-copy",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "A Rollup plugin that copies asset files while preserving the relative folder structure.",
 	"keywords": [
 		"rollup",

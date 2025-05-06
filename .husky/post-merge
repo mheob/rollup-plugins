@@ -1,0 +1,7 @@
+[ -n "$CI" ] && exit 0
+
+changedFiles="$(git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD)"
+
+hasChanged() { echo "$changedFiles" | grep -q "$1"; }
+
+hasChanged pnpm-lock.yaml && pnpm install

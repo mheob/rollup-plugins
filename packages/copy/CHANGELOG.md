@@ -1,5 +1,11 @@
 # @mheob/rollup-plugin-copy
 
+## 1.0.3
+
+### Patch Changes
+
+- [#10](https://github.com/mheob/rollup-plugins/pull/10) ([@mheob](https://github.com/mheob)): remove obsolete interface
+
 ## 1.0.2
 
 ### Patch Changes

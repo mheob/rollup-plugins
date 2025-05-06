@@ -25,12 +25,14 @@
 		"build": "tsup src/index.ts --clean --dts --minify --format esm",
 		"lint": "eslint . --fix"
 	},
+	"dependencies": {
+		"glob": "^11.0.2"
+	},
 	"devDependencies": {
 		"@types/node": "^22.15.12",
 		"eslint": "catalog:",
-		"glob": "^11.0.2",
 		"rollup": "^4.40.2",
-		"tsup": "^8.0.0",
+		"tsup": "^8.4.0",
 		"typescript": "catalog:"
 	},
 	"peerDependencies": {

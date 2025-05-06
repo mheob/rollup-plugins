@@ -61,6 +61,10 @@ importers:
         version: 5.8.3
 
   packages/copy:
+    dependencies:
+      glob:
+        specifier: ^11.0.2
+        version: 11.0.2
     devDependencies:
       '@types/node':
         specifier: ^22.15.12
@@ -68,14 +72,11 @@ importers:
       eslint:
         specifier: 'catalog:'
         version: 9.26.0(jiti@2.4.2)
-      glob:
-        specifier: ^11.0.2
-        version: 11.0.2
       rollup:
         specifier: ^4.40.2
         version: 4.40.2
       tsup:
-        specifier: ^8.0.0
+        specifier: ^8.4.0
         version: 8.4.0(jiti@2.4.2)(typescript@5.8.3)(yaml@2.7.1)
       typescript:
         specifier: 'catalog:'

@@ -7,12 +7,6 @@ import process from 'node:process';
 import { glob } from 'glob';
 import type { Plugin } from 'rollup';
 
-export interface CopyOptions {
-	exclude?: string | string[];
-	patterns: string | string[];
-	rootDir?: string;
-}
-
 /**
  * Lists all files using the specified glob, starting from the given root directory.
  *

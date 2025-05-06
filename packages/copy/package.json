@@ -7,7 +7,7 @@
 		"plugin",
 		"copy"
 	],
-	"homepage": "https://github.com/mheob/rollup-plugins/tree/main/packages/rollup-plugin-copy",
+	"homepage": "https://github.com/mheob/rollup-plugins/tree/main/packages/copy",
 	"bugs": "https://github.com/mheob/rollup-plugins/issues",
 	"repository": {
 		"type": "git",

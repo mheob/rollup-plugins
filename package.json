@@ -1,20 +1,40 @@
 {
-  "name": "rollup-plugin-copy",
-  "private": true,
-  "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types"
-  },
-  "devDependencies": {
-    "prettier": "^3.5.3",
-    "turbo": "^2.5.2",
-    "typescript": "5.8.2"
-  },
-  "packageManager": "pnpm@9.0.0",
-  "engines": {
-    "node": ">=18"
-  }
+	"name": "@mheob/rollup-plugins",
+	"private": true,
+	"license": "MIT",
+	"scripts": {
+		"build": "turbo run build",
+		"changeset": "changeset",
+		"lint": "turbo run lint",
+		"prepare": "husky",
+		"version-packages": "changeset version && pnpm lint"
+	},
+	"lint-staged": {
+		"*": "eslint --fix"
+	},
+	"config": {
+		"commitizen": {
+			"path": "node_modules/cz-git"
+		}
+	},
+	"devDependencies": {
+		"@changesets/cli": "^2.29.3",
+		"@commitlint/cli": "^19.8.0",
+		"@mheob/changeset-changelog": "^3.0.1",
+		"@mheob/commitlint-config": "^1.2.1",
+		"@mheob/eslint-config": "^8.8.1",
+		"@mheob/prettier-config": "^3.3.3",
+		"commitizen": "^4.3.1",
+		"cz-git": "^1.11.1",
+		"eslint": "catalog:",
+		"husky": "^9.1.7",
+		"lint-staged": "^15.5.2",
+		"prettier": "^3.5.3",
+		"turbo": "^2.5.2",
+		"typescript": "catalog:"
+	},
+	"packageManager": "pnpm@10.10.0",
+	"engines": {
+		"node": ">=22"
+	}
 }

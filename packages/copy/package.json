@@ -1,0 +1,42 @@
+{
+	"name": "@mheob/rollup-plugin-copy",
+	"version": "0.0.0",
+	"description": "A Rollup plugin that copies asset files while preserving the relative folder structure.",
+	"keywords": [
+		"rollup",
+		"plugin",
+		"copy"
+	],
+	"homepage": "https://github.com/mheob/rollup-plugins/tree/main/packages/rollup-plugin-copy",
+	"bugs": "https://github.com/mheob/rollup-plugins/issues",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mheob/rollup-plugins"
+	},
+	"license": "MIT",
+	"author": "Alexander Böhm <tools@boehm.work>",
+	"type": "module",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup src/index.ts --clean --dts --minify --format esm",
+		"lint": "eslint . --fix"
+	},
+	"devDependencies": {
+		"@types/node": "^22.15.12",
+		"eslint": "catalog:",
+		"glob": "^11.0.2",
+		"rollup": "^4.40.2",
+		"tsup": "^8.0.0",
+		"typescript": "catalog:"
+	},
+	"peerDependencies": {
+		"rollup": "^4.40.2"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}

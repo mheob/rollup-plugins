@@ -1,3 +1,8 @@
 packages:
-  - "apps/*"
-  - "packages/*"
+  - packages/*
+catalog:
+  eslint: ^9.26.0
+  typescript: ^5.8.3
+onlyBuiltDependencies:
+  - esbuild
+  - unrs-resolver

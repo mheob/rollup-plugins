@@ -1,0 +1,30 @@
+---
+description: Naming convention
+globs:
+alwaysApply: false
+---
+# Naming convention
+
+- Use descriptive variable names with auxiliary verbs (e.g. `isLoading`, `hasError`, `canDelete` etc.)
+- Use kebab-case for directory and file names (e.g., `the-folder/my-component.ts`)
+- Use camelCase for variables, functions, and methods (e.g., `myVariable`, `myFunction()`)
+- Use UpperCamelCase (PascalCase) for classes, types, and interfaces (e.g., `MyClass`, `MyInterface`)
+- Use PascalCase for classes (`class MyClass`)
+- Use ALL_CAPS (CONSTANT_CASE) for constants and enum values (e.g., `MAX_COUNT`, `Color.RED`)
+- File extensions: Use `.config.ts`, `.test.ts`, `.context.tsx`, `.type.ts`, `.hook.ts` as appropriate
+- Inside generic types, functions or classes, prefix type parameters with `T` (e.g., `TKey`, `TValue`)
+- Avoid magic numbers and define constants
+- Use complete words instead of abbreviations and correct spelling.
+  - Except for standard abbreviations like API, URL, etc.
+  - Except for well-known abbreviations:
+    - `i`, `j` for loops
+    - `idx` for index
+    - `err` for errors
+    - `ctx` for contexts
+    - `req`, `res`, `next` for middleware function parameters
+    - `props` for properties
+    - `utils` for utilities
+
+```ts
+type RecordOfArrays<TItem> = Record<string, TItem[]>;
+```

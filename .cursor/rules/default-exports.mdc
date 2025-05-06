@@ -1,0 +1,43 @@
+---
+description: Default export
+globs:
+alwaysApply: false
+---
+# Default export
+
+Unless explicitly required by the framework, do not use default exports.
+
+```tsx
+// BAD
+export default function myFunction() {
+  return <div>Hello</div>;
+}
+```
+
+```tsx
+// GOOD
+export function myFunction() {
+  return <div>Hello</div>;
+}
+```
+
+Default exports create confusion from the importing file.
+
+```ts
+// BAD
+import myFunction from './my-function';
+```
+
+```ts
+// GOOD
+import { myFunction } from './my-function';
+```
+
+There are certain situations where a framework may require a default export. For instance, Next.js requires a default export for pages.
+
+```tsx
+// This is fine, if required by the framework
+export default function MyPage() {
+	return <div>Hello</div>;
+}
+```

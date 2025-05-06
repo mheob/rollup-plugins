@@ -1,0 +1,26 @@
+---
+description: No unchecked indexed access
+globs:
+alwaysApply: false
+---
+# No unchecked indexed access
+
+If the user has this rule enabled in their `tsconfig.json`, indexing into objects and arrays will behave differently from how you expect.
+
+```ts
+const object: Record<string, string> = {};
+
+// With noUncheckedIndexedAccess, value will
+// be `string | undefined`
+// Without it, value will be `string`
+const value = object.key;
+```
+
+```ts
+const array: string[] = [];
+
+// With noUncheckedIndexedAccess, value will
+// be `string | undefined`
+// Without it, value will be `string`
+const value = array[0];
+```

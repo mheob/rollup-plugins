@@ -7,6 +7,7 @@
 		"changeset": "changeset",
 		"lint": "turbo run lint",
 		"prepare": "husky",
+		"release": "changeset publish",
 		"version-packages": "changeset version && pnpm lint"
 	},
 	"lint-staged": {

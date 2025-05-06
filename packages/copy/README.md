@@ -12,7 +12,7 @@ pnpm add -D @mheob/rollup-plugin-copy
 
 ```js
 // rollup.config.mjs
-import { copy } from '@mheob/rollup-plugin-copy';
+import copy from '@mheob/rollup-plugin-copy';
 
 export default {
 	input: 'src/index.js',

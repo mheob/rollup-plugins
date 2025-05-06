@@ -14,7 +14,7 @@ Prefer top-level `import type` over inline `import { type ... }`.
 
 ```ts
 // BAD
-import type { User } from './user';
+import { type User } from './user';
 ```
 
 ```ts

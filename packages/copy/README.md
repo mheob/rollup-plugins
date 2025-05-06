@@ -29,7 +29,7 @@ export default {
 | Options | Type | Mandatory | Default | Description |
 | --- | --- | :-: | --- | --- |
 | `patterns` | `string\|string[]` | ✅ |  | Does accept a string pattern or an array of strings patterns. |
-| `rootDir` | `string` |  | `cwd` | Patterns are relative to this directory and all found files will be resolved relative to it. If files can not be found `path.resolve('./my/path)` may be used to ensure a full path. |
+| `rootDir` | `string` |  | `cwd` | Patterns are relative to this directory and all found files will be resolved relative to it. If files can't be found, use `path.resolve('./my/path')` to supply an absolute path. |
 | `exclude` | `string\|string[]` |  | `undefined` | A glob or array of globs to exclude from copying. |
 
 ## Thanks

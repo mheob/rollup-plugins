@@ -26,17 +26,17 @@
 		"lint": "eslint . --fix"
 	},
 	"dependencies": {
-		"glob": "^11.0.2"
+		"glob": "^11.0.3"
 	},
 	"devDependencies": {
-		"@types/node": "^22.15.12",
+		"@types/node": "^22.18.1",
 		"eslint": "catalog:",
-		"rollup": "^4.40.2",
-		"tsup": "^8.4.0",
+		"rollup": "^4.50.0",
+		"tsup": "^8.5.0",
 		"typescript": "catalog:"
 	},
 	"peerDependencies": {
-		"rollup": "^4.40.2"
+		"rollup": "^4.40.0"
 	},
 	"publishConfig": {
 		"access": "public"

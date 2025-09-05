@@ -1,5 +1,11 @@
 # @mheob/rollup-plugin-copy
 
+## 1.0.4
+
+### Patch Changes
+
+- [#14](https://github.com/mheob/rollup-plugins/pull/14) ([@mheob](https://github.com/mheob)): bump `glob` to `11.0.3`
+
 ## 1.0.3
 
 ### Patch Changes

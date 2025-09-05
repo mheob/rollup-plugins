@@ -19,22 +19,22 @@
 		}
 	},
 	"devDependencies": {
-		"@changesets/cli": "^2.29.3",
-		"@commitlint/cli": "^19.8.0",
-		"@mheob/changeset-changelog": "^3.0.1",
-		"@mheob/commitlint-config": "^1.2.1",
-		"@mheob/eslint-config": "^8.8.1",
-		"@mheob/prettier-config": "^3.3.3",
+		"@changesets/cli": "^2.29.6",
+		"@commitlint/cli": "^19.8.1",
+		"@mheob/changeset-changelog": "^3.0.2",
+		"@mheob/commitlint-config": "^1.2.4",
+		"@mheob/eslint-config": "^8.12.0",
+		"@mheob/prettier-config": "^3.3.4",
 		"commitizen": "^4.3.1",
-		"cz-git": "^1.11.1",
+		"cz-git": "^1.12.0",
 		"eslint": "catalog:",
 		"husky": "^9.1.7",
-		"lint-staged": "^15.5.2",
-		"prettier": "^3.5.3",
-		"turbo": "^2.5.2",
+		"lint-staged": "^16.1.6",
+		"prettier": "^3.6.2",
+		"turbo": "^2.5.6",
 		"typescript": "catalog:"
 	},
-	"packageManager": "pnpm@10.10.0",
+	"packageManager": "pnpm@10.15.1",
 	"engines": {
 		"node": ">=22"
 	}

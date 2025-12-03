@@ -20,7 +20,7 @@
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.29.6",
-		"@commitlint/cli": "^19.8.1",
+		"@commitlint/cli": "^20.1.0",
 		"@mheob/changeset-changelog": "^3.0.2",
 		"@mheob/commitlint-config": "^1.2.4",
 		"@mheob/eslint-config": "^8.12.0",

@@ -26,7 +26,7 @@
 		"lint": "eslint . --fix"
 	},
 	"dependencies": {
-		"glob": "^11.0.3"
+		"glob": "^11.1.0"
 	},
 	"devDependencies": {
 		"@types/node": "^22.18.1",

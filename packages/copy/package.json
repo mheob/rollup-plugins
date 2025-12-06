@@ -31,8 +31,8 @@
 	"devDependencies": {
 		"@types/node": "^24.10.1",
 		"eslint": "catalog:",
-		"rollup": "^4.50.0",
-		"tsup": "^8.5.0",
+		"rollup": "^4.53.3",
+		"tsup": "^8.5.1",
 		"typescript": "catalog:"
 	},
 	"peerDependencies": {

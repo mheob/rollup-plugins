@@ -29,10 +29,10 @@
 		"glob": "^11.1.0"
 	},
 	"devDependencies": {
-		"@types/node": "^24.10.1",
+		"@types/node": "^24.10.9",
 		"eslint": "catalog:",
-		"rollup": "^4.50.0",
-		"tsup": "^8.5.0",
+		"rollup": "^4.57.1",
+		"tsup": "^8.5.1",
 		"typescript": "catalog:"
 	},
 	"peerDependencies": {

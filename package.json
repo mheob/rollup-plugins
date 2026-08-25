@@ -22,7 +22,7 @@
 		"@changesets/cli": "^2.29.6",
 		"@commitlint/cli": "^20.1.0",
 		"@mheob/changeset-changelog": "^3.0.2",
-		"@mheob/commitlint-config": "^1.2.4",
+		"@mheob/commitlint-config": "^2.0.6",
 		"@mheob/eslint-config": "^9.0.1",
 		"@mheob/prettier-config": "^3.3.4",
 		"commitizen": "^4.3.1",

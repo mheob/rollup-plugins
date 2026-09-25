@@ -27,8 +27,8 @@ importers:
         specifier: ^3.0.2
         version: 3.0.2
       '@mheob/commitlint-config':
-        specifier: ^1.2.5
-        version: 1.2.5(@commitlint/cli@20.5.3(@types/node@24.13.6)(conventional-commits-parser@6.4.0)(typescript@5.9.3))(commitizen@4.3.2(@types/node@24.13.6)(typescript@5.9.3))(cz-git@1.14.0)
+        specifier: ^2.0.7
+        version: 2.0.7(@commitlint/cli@20.5.3(@types/node@24.13.6)(conventional-commits-parser@6.4.0)(typescript@5.9.3))(czg@1.14.0)
       '@mheob/eslint-config':
         specifier: ^9.1.0
         version: 9.1.0(@next/eslint-plugin-next@16.3.5(eslint@9.39.5(jiti@2.6.1)))(@typescript-eslint/types@8.70.0)(@typescript-eslint/typescript-estree@8.70.0(typescript@5.9.3))(@typescript-eslint/utils@8.70.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint-plugin-react-hooks@7.1.1(eslint@9.39.5(jiti@2.6.1)))(eslint@9.39.5(jiti@2.6.1))(prettier@3.9.8)(typescript@5.9.3)
@@ -618,13 +618,12 @@ packages:
     resolution: {integrity: sha512-Ee176SnlX1XnVayz1nKiuls9Rx/jiZ4arxmADhwdxKq0wMcJuT7U+opPacb0zn+6DxurnmDSHAQmvaxqW5azng==}
     engines: {node: ^22.16.0}
 
-  '@mheob/commitlint-config@1.2.5':
-    resolution: {integrity: sha512-WV4EozllMRDbDZ17tNNR/jWXocw0Geelk/kO3yOZc2N2GoQznLYl8Rws8bJdqcHpNLLdn1cEM9Tb23Ih+twy5w==}
-    engines: {node: '>=22.12.0'}
+  '@mheob/commitlint-config@2.0.7':
+    resolution: {integrity: sha512-VjekGW9opRW5J98NuIHYIsXl6MfZmhnYXKd/yX8iekqxnpOsiAaTpMz0EDkLpW01czMQyRJ53OlKZJ4+q53zig==}
+    engines: {node: '>=24'}
     peerDependencies:
-      '@commitlint/cli': ^20.1.0
-      commitizen: ^4.3.1
-      cz-git: ^1.12.0
+      '@commitlint/cli': ^21.2.2
+      czg: ^1.14.0
 
   '@mheob/eslint-config@9.1.0':
     resolution: {integrity: sha512-vLiJwOoqsDLC0rcbzrrjkpkG11JF2V/VRNASFngJUdgELcCYPAJ6v+XA7NE/1ncV4tAo5wv0FpJ5SqBGBuh4tQ==}
@@ -1517,6 +1516,11 @@ packages:
   cz-git@1.14.0:
     resolution: {integrity: sha512-QjwlXZrGWsXQkyregBHhA2qNNGB2TCuf0ovkW1Q5OLgdJDs9Tq1yahfKpSMLyqOBjVRuv1iHBTDP83zJDBlJdg==}
     engines: {node: '>=v12.20.0'}
+
+  czg@1.14.0:
+    resolution: {integrity: sha512-pO0VNReAHu6TSArr655pYRyShn6n2MX2ohMIz/jIugbI2UkeqSGp46zIOsYKORi9l1WNcdkbCiLKc8lolCr2Tw==}
+    engines: {node: '>=v12.20.0'}
+    hasBin: true
 
   damerau-levenshtein@1.0.8:
     resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==}
@@ -4398,11 +4402,10 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@mheob/commitlint-config@1.2.5(@commitlint/cli@20.5.3(@types/node@24.13.6)(conventional-commits-parser@6.4.0)(typescript@5.9.3))(commitizen@4.3.2(@types/node@24.13.6)(typescript@5.9.3))(cz-git@1.14.0)':
+  '@mheob/commitlint-config@2.0.7(@commitlint/cli@20.5.3(@types/node@24.13.6)(conventional-commits-parser@6.4.0)(typescript@5.9.3))(czg@1.14.0)':
     dependencies:
       '@commitlint/cli': 20.5.3(@types/node@24.13.6)(conventional-commits-parser@6.4.0)(typescript@5.9.3)
-      commitizen: 4.3.2(@types/node@24.13.6)(typescript@5.9.3)
-      cz-git: 1.14.0
+      czg: 1.14.0
 
   '@mheob/eslint-config@9.1.0(@next/eslint-plugin-next@16.3.5(eslint@9.39.5(jiti@2.6.1)))(@typescript-eslint/types@8.70.0)(@typescript-eslint/typescript-estree@8.70.0(typescript@5.9.3))(@typescript-eslint/utils@8.70.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint-plugin-react-hooks@7.1.1(eslint@9.39.5(jiti@2.6.1)))(eslint@9.39.5(jiti@2.6.1))(prettier@3.9.8)(typescript@5.9.3)':
     dependencies:
@@ -5237,6 +5240,8 @@ snapshots:
 
   cz-git@1.14.0: {}
 
+  czg@1.14.0: {}
+
   damerau-levenshtein@1.0.8: {}
 
   data-view-buffer@1.0.2:
@@ -5522,7 +5527,7 @@ snapshots:
       eslint: 9.39.5(jiti@2.6.1)
       eslint-import-resolver-node: 0.3.10
       eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1)))(eslint@9.39.5(jiti@2.6.1))
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1)))(eslint@9.39.5(jiti@2.6.1)))(eslint@9.39.5(jiti@2.6.1))
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5(jiti@2.6.1))
       eslint-plugin-jsx-a11y: 6.10.2(eslint@9.39.5(jiti@2.6.1))
       eslint-plugin-react: 7.37.5(eslint@9.39.5(jiti@2.6.1))
       eslint-plugin-react-hooks: 7.1.1(eslint@9.39.5(jiti@2.6.1))
@@ -5563,7 +5568,7 @@ snapshots:
       tinyglobby: 0.2.17
       unrs-resolver: 1.12.2
     optionalDependencies:
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1)))(eslint@9.39.5(jiti@2.6.1)))(eslint@9.39.5(jiti@2.6.1))
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5(jiti@2.6.1))
     transitivePeerDependencies:
       - supports-color
 
@@ -5606,7 +5611,7 @@ snapshots:
       eslint: 9.39.5(jiti@2.6.1)
       eslint-compat-utils: 0.5.1(eslint@9.39.5(jiti@2.6.1))
 
-  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint@9.39.5(jiti@2.6.1)))(eslint@9.39.5(jiti@2.6.1)))(eslint@9.39.5(jiti@2.6.1)):
+  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5(jiti@2.6.1)):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.2.0

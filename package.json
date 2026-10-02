@@ -30,8 +30,8 @@
 		"eslint": "catalog:",
 		"husky": "^9.1.7",
 		"lint-staged": "^16.4.0",
-		"prettier": "^3.9.7",
-		"turbo": "^2.5.6",
+		"prettier": "^3.9.9",
+		"turbo": "^2.11.5",
 		"typescript": "catalog:"
 	},
 	"packageManager": "pnpm@10.24.0",

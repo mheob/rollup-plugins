@@ -29,9 +29,9 @@
 		"glob": "^13.0.6"
 	},
 	"devDependencies": {
-		"@types/node": "^24.19.0",
+		"@types/node": "^24.19.2",
 		"eslint": "catalog:",
-		"rollup": "^4.63.5",
+		"rollup": "^4.64.6",
 		"tsup": "^8.5.1",
 		"typescript": "catalog:"
 	},

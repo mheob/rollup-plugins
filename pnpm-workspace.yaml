@@ -4,5 +4,5 @@ onlyBuiltDependencies:
   - esbuild
   - unrs-resolver
 catalog:
-  eslint: ^9.34.0
-  typescript: ^5.9.2
+  eslint: ^9.39.5
+  typescript: ^5.9.3

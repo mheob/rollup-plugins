@@ -27,8 +27,8 @@ importers:
         specifier: ^3.0.2
         version: 3.0.2
       '@mheob/commitlint-config':
-        specifier: ^1.2.5
-        version: 1.2.5(@commitlint/cli@20.5.3(@types/node@24.19.2)(conventional-commits-parser@6.4.0)(typescript@5.9.3))(commitizen@4.3.2(@types/node@24.19.2)(typescript@5.9.3))(cz-git@1.14.0)
+        specifier: ^2.0.9
+        version: 2.0.9(@commitlint/cli@20.5.3(@types/node@24.19.2)(conventional-commits-parser@6.4.0)(typescript@5.9.3))(czg@1.14.0)
       '@mheob/eslint-config':
         specifier: ^9.1.0
         version: 9.1.0(@next/eslint-plugin-next@16.3.5(eslint@9.39.5(jiti@2.6.1)))(@typescript-eslint/types@8.70.0)(@typescript-eslint/typescript-estree@8.70.0(typescript@5.9.3))(@typescript-eslint/utils@8.70.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint-plugin-react-hooks@7.1.1(eslint@9.39.5(jiti@2.6.1)))(eslint@9.39.5(jiti@2.6.1))(prettier@3.9.10)(typescript@5.9.3)
@@ -318,6 +318,10 @@ packages:
         optional: true
       conventional-commits-parser:
         optional: true
+
+  '@conventional-changelog/template@1.4.0':
+    resolution: {integrity: sha512-aalGyl7dbB5PArRebDIX43ZvBlXrYm9uWzGJ26t+4SzJVPsOuvfILGGbw5X4yX7i50YEmJ8zvbiWnqH/AAnZqg==}
+    engines: {node: '>=22'}
 
   '@emnapi/core@1.10.0':
     resolution: {integrity: sha512-yq6OkJ4p82CAfPl0u9mQebQHKPJkY7WrIuk205cTYnYe+k2Z8YBh11FrbRG/H6ihirqcacOgl2BIO8oyMQLeXw==}
@@ -618,13 +622,12 @@ packages:
     resolution: {integrity: sha512-Ee176SnlX1XnVayz1nKiuls9Rx/jiZ4arxmADhwdxKq0wMcJuT7U+opPacb0zn+6DxurnmDSHAQmvaxqW5azng==}
     engines: {node: ^22.16.0}
 
-  '@mheob/commitlint-config@1.2.5':
-    resolution: {integrity: sha512-WV4EozllMRDbDZ17tNNR/jWXocw0Geelk/kO3yOZc2N2GoQznLYl8Rws8bJdqcHpNLLdn1cEM9Tb23Ih+twy5w==}
-    engines: {node: '>=22.12.0'}
+  '@mheob/commitlint-config@2.0.9':
+    resolution: {integrity: sha512-2mAnfK0OSAU2rnGIwTU5mdxzgFqqcoknSqmDrUrphhcreoG+5wWjgGRkUOHrTBjAZTWY1VJtAtfmVA8D/The9g==}
+    engines: {node: '>=24'}
     peerDependencies:
-      '@commitlint/cli': ^20.1.0
-      commitizen: ^4.3.1
-      cz-git: ^1.12.0
+      '@commitlint/cli': ^21.2.3
+      czg: ^1.14.0
 
   '@mheob/eslint-config@9.1.0':
     resolution: {integrity: sha512-vLiJwOoqsDLC0rcbzrrjkpkG11JF2V/VRNASFngJUdgELcCYPAJ6v+XA7NE/1ncV4tAo5wv0FpJ5SqBGBuh4tQ==}
@@ -1464,6 +1467,10 @@ packages:
     resolution: {integrity: sha512-6gfI3otXK5Ph5DfCOI1dblr+kN3FAm5a97hYoQkqNZxOaYa5WKfXH+AnpsmS+iUH2mgVC2Cg2Qw9m5OKcmNrIg==}
     engines: {node: '>=18'}
 
+  conventional-changelog-conventionalcommits@10.4.1:
+    resolution: {integrity: sha512-jS1LRFSbRoAr6JbhhRy1JYfNNUj5LM3+v49hRE03CgccsiYqgdVj/RTmrw4J1rylrqijHwdOlJWiJa61JHOgHg==}
+    engines: {node: '>=22'}
+
   conventional-commit-types@3.0.0:
     resolution: {integrity: sha512-SmmCYnOniSsAa9GqWOeLqc179lfr5TRu5b4QFDkbsrJ5TZjPJx85wtOr3zn+1dbeNiXDKGPbZ72IKbPhLXh/Lg==}
 
@@ -1517,6 +1524,11 @@ packages:
   cz-git@1.14.0:
     resolution: {integrity: sha512-QjwlXZrGWsXQkyregBHhA2qNNGB2TCuf0ovkW1Q5OLgdJDs9Tq1yahfKpSMLyqOBjVRuv1iHBTDP83zJDBlJdg==}
     engines: {node: '>=v12.20.0'}
+
+  czg@1.14.0:
+    resolution: {integrity: sha512-pO0VNReAHu6TSArr655pYRyShn6n2MX2ohMIz/jIugbI2UkeqSGp46zIOsYKORi9l1WNcdkbCiLKc8lolCr2Tw==}
+    engines: {node: '>=v12.20.0'}
+    hasBin: true
 
   damerau-levenshtein@1.0.8:
     resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==}
@@ -4139,6 +4151,8 @@ snapshots:
     optionalDependencies:
       conventional-commits-parser: 6.4.0
 
+  '@conventional-changelog/template@1.4.0': {}
+
   '@emnapi/core@1.10.0':
     dependencies:
       '@emnapi/wasi-threads': 1.2.1
@@ -4398,11 +4412,11 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@mheob/commitlint-config@1.2.5(@commitlint/cli@20.5.3(@types/node@24.19.2)(conventional-commits-parser@6.4.0)(typescript@5.9.3))(commitizen@4.3.2(@types/node@24.19.2)(typescript@5.9.3))(cz-git@1.14.0)':
+  '@mheob/commitlint-config@2.0.9(@commitlint/cli@20.5.3(@types/node@24.19.2)(conventional-commits-parser@6.4.0)(typescript@5.9.3))(czg@1.14.0)':
     dependencies:
       '@commitlint/cli': 20.5.3(@types/node@24.19.2)(conventional-commits-parser@6.4.0)(typescript@5.9.3)
-      commitizen: 4.3.2(@types/node@24.19.2)(typescript@5.9.3)
-      cz-git: 1.14.0
+      conventional-changelog-conventionalcommits: 10.4.1
+      czg: 1.14.0
 
   '@mheob/eslint-config@9.1.0(@next/eslint-plugin-next@16.3.5(eslint@9.39.5(jiti@2.6.1)))(@typescript-eslint/types@8.70.0)(@typescript-eslint/typescript-estree@8.70.0(typescript@5.9.3))(@typescript-eslint/utils@8.70.0(eslint@9.39.5(jiti@2.6.1))(typescript@5.9.3))(eslint-plugin-react-hooks@7.1.1(eslint@9.39.5(jiti@2.6.1)))(eslint@9.39.5(jiti@2.6.1))(prettier@3.9.10)(typescript@5.9.3)':
     dependencies:
@@ -5178,6 +5192,10 @@ snapshots:
     dependencies:
       compare-func: 2.0.0
 
+  conventional-changelog-conventionalcommits@10.4.1:
+    dependencies:
+      '@conventional-changelog/template': 1.4.0
+
   conventional-commit-types@3.0.0: {}
 
   conventional-commits-parser@6.4.0:
@@ -5236,6 +5254,8 @@ snapshots:
       - typescript
 
   cz-git@1.14.0: {}
+
+  czg@1.14.0: {}
 
   damerau-levenshtein@1.0.8: {}
 
